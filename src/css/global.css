@@ -81,6 +81,7 @@ nav img {
 .buy-gif img {
   width: 40px;
   height: 35px;
+  mix-blend-mode: multiply;
 }
 
 .product-card span {
