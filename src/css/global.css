@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Roboto", "sans-serif";
+}
+
+nav {
+  display: flex;
+  gap: 6px;
+  padding-top: 12px !important;
+  max-width: 980px;
+  margin: auto !important;
+  letter-spacing: 1px;
+}
+
+nav img {
+  width: 24px;
+}
+
+.product-container {
+  display: grid;
+  align-items: stretch;
+  padding: 12px;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: fit-content;
+  margin-top: 50px !important;
+  margin: auto;
+}
+
+.product-card {
+  background-color: #f8f9fe;
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.description {
+  height: 80px;
+}
+
+/* .product-card img {
+  max-width: fit-content;
+  max-height: 200px;
+  mix-blend-mode: multiply;
+} */
+
+.card-img {
+  max-width: fit-content;
+  max-height: 200px;
+  mix-blend-mode: multiply;
+  margin: auto !important;
+}
+
+.product-card h2 {
+  font-size: 18px;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin: 12px 0px 12px 0px;
+  color: #6a7ca4;
+}
+
+.buy-gif {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.buy-gif img {
+  width: 40px;
+  height: 35px;
+}
+
+.product-card span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 600px) {
+  .product-container {
+    display: grid;
+    padding: 12px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .product-card {
+    background-color: #f8f9fe;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .add-to-cart-button-container {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+  }
+}
+
+.add-to-cart-button-container button {
+  background-color: #0255d6;
+  color: white;
+  border: 1px solid transparent;
+  padding: 6px 12px 6px 12px;
+  margin-top: 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.add-to-cart-button-container button:hover {
+  background-color: #ffffff;
+  color: #0255d6;
+  border: 1px solid;
+}
