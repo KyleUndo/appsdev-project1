@@ -18,8 +18,8 @@ nav {
   max-width: 980px;
   margin: auto !important;
   letter-spacing: 1px;
-  backdrop-filter: blur(10px); /* More blur for glass effect */
-  background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
