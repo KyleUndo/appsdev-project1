@@ -18,6 +18,11 @@ nav {
   max-width: 980px;
   margin: auto !important;
   letter-spacing: 1px;
+  backdrop-filter: blur(10px); /* More blur for glass effect */
+  background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav img {
@@ -36,24 +41,22 @@ nav img {
 }
 
 .product-card {
-  background-color: #f8f9fe;
-  padding: 16px;
+  background-color: #d0d5ee !important;
+  padding: 0px !important;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
+  box-shadow: 2px 2px 2px 2px;
 }
 
-.description {
-  height: 80px;
+.description-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 12px;
 }
 
-/* .product-card img {
-  max-width: fit-content;
-  max-height: 200px;
-  mix-blend-mode: multiply;
-} */
 
 .card-img {
   max-width: fit-content;
@@ -76,6 +79,7 @@ nav img {
   width: 100%;
   display: flex;
   justify-content: end;
+  padding: 8px 6px 0px 0px;
 }
 
 .buy-gif img {
